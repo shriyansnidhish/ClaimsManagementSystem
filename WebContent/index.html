@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="utf-8">
+	 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Claims Management System</title>	 
+	<!--  compiled and minified CSS --> 
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional Bootstrap theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!--  compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<!--  My Css File -->
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--  google fonts -->
+<link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Faster+One|Gloria+Hallelujah|Merienda|Oleo+Script:700|Yesteryear|Monoton|Srisakdi:400,700|Black+Ops+One&amp;subset=latin-ext" rel="stylesheet">
+	<style type="text/css">
+ body{
+ background-color: rgba(51,122,183,1);
+   
+  }
+  .imageTransparent{
+     opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+  }
+  </style>
+  <script language="Javascript">
+  
+var i = 0;
+function change() {
+  var doc = document.getElementById("bgc");
+  var color = ["#20B2AA", "#800000", "#191970", "#6B8E23","#2F4F4F","#9400D3"];
+  doc.style.backgroundColor = color[i];
+  i = (i + 1) % color.length;
+}
+setInterval(change, 1000);
+
+</script>
+</head>
+<body > 
+<!-- NavBar -->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header" >
+      <a class="navbar-brand " href="index.html" id="logo"> <img src="images/logo.PNG" height="50px" weight="50px"></a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active" ><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right" id="navbr">
+      <li><a href="memberregistration.htm" style="color:DodgerBlue;"><span class="glyphicon glyphicon-user" ></span> Member Registration</a></li>
+       <li><a href="memberlogin.htm" style="color:DodgerBlue;"><span class="glyphicon glyphicon glyphicon-log-in" ></span> Member Login</a></li>
+      <li><a href="adminregistration.htm" style="color:orange;"><span class="glyphicon  glyphicon glyphicon-user"></span> Admin Registration</a></li>
+   <li><a href="adminlogin.htm" style="color:orange;"><span class="glyphicon  glyphicon glyphicon glyphicon-log-in"></span> Admin Login&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+    </ul>
+  </div>
+</nav> 
+<!-- Jumbotron -->
+  <div class="jumbo">
+  <h3 style="display: inline; padding-left: 5%;" >Claims Management System</h3>     
+    <h5 style="display: inline; float: right; padding-right: 5%;">Profession of Business</h5>
+  </div>
+
+<div id="indexPics"  style="max-width:500px;">
+  <img class="mySlides" src="images/index2.PNG" height="400px" width="1000px"  style="border-radius: 17%;">
+  <img class="mySlides " src="images/index5.jpg" height="400px" width="1000px" style="border-radius: 17%;">
+  <img class="mySlides imageTransparent" src="images/index6.jpg" height="400px" width="1000px" style="border-radius: 17%;">
+    <img class="mySlides " src="images/index1.PNG" height="400px" width="1000px" style="border-radius: 17%;">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 5000); 
+}
+</script>
+
+
+<!-- Jumbotron -->
+   <div class="jumbotron">
+  <a href="#" style="display: inline; padding-left: 5%;">CMS Infotech</a>
+  <a href="#" style="display: inline; padding-left: 5%;">Privacy & Terms</a>  
+  <a href="#" style="display: inline; padding-left: 5%;">Need Help ?</a>    
+
+    <a href="https://www.cognizant.com/" style="display: inline; float: right; padding-right: 5%;">Powered by Cognizant © 2019</a>
+  </div>
+</body>
+</html>
